@@ -15,6 +15,8 @@ namespace EfCore.ContextConfiguration
             builder.Property(p => p.Id).HasColumnName("city_id");
             builder.Property(p => p.Name).HasColumnName("city");
             builder.Property(p => p.CountryId).HasColumnName("country_id");
+            builder.HasOne(c=>c.Country).WithMany(c=>c.Cities).HasForeignKey(c=> new { CountryId =c.CountryId} );
+        
 
         }
 

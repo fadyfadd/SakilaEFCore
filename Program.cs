@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace EfCore
 {
@@ -9,7 +9,10 @@ namespace EfCore
         public static void Main(string[] args)
         {
             SakilaContext context = new SakilaContext(); 
-            var h = context.Countries.ToList();                     
+            
+            var countries = context.Countries.Include(c=>c.Cities).ToList();  
+            var cities = context.Cities.Include(c=>c.Country).ToList(); 
+
         }
     }
 

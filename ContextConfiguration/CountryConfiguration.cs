@@ -17,6 +17,7 @@ namespace EfCore.ContextConfiguration
             builder.Property(p => p.Name).HasColumnName("country");
             builder.Property(p => p.LastUpdate).HasColumnName("last_update");    
 
+          
         }
 
     }
