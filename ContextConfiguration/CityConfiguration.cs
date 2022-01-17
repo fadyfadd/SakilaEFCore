@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using efCore;
+using EfCore;
 
 
-namespace efCore.ContextConfiguration
+namespace EfCore.ContextConfiguration
 {
     class CityConfiguration : IEntityTypeConfiguration<City>
     {

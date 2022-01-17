@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using efCore.ContextConfiguration;
+using EfCore.ContextConfiguration;
 
 namespace EfCore
 {
@@ -8,6 +8,7 @@ namespace EfCore
     {
 
         public DbSet<City> Cities { set; get; }
+        public DbSet<Country> Countries {set; get;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -20,6 +21,7 @@ namespace EfCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration<City>(new CityConfiguration());
+            modelBuilder.ApplyConfiguration<Country>(new CountryConfiguration());
            
         }
 

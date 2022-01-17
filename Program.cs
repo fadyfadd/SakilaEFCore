@@ -9,7 +9,7 @@ namespace EfCore
         public static void Main(string[] args)
         {
             SakilaContext context = new SakilaContext(); 
-            var h = context.Cities.ToList();                     
+            var h = context.Countries.ToList();                     
         }
     }
 
