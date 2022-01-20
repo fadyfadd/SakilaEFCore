@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 
-namespace EfCore
+namespace SakilaEFCore
 {
 
     class MyApp

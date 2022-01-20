@@ -1,4 +1,5 @@
-namespace EfCore {
+namespace SakilaEFCore
+{
     public class Country {
 
         public int Id {set; get;}

@@ -1,6 +1,6 @@
 using System;
 
-namespace EfCore
+namespace SakilaEFCore
 {
     public class City
     {

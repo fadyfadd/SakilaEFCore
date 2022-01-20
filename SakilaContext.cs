@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using EfCore.ContextConfiguration;
+using SakilaEFCore.ContextConfiguration;
 
-namespace EfCore
+namespace SakilaEFCore
 {
 
     public class SakilaContext : DbContext
